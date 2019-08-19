@@ -1,0 +1,14 @@
+/* pages/launch/launch.wxss */
+.logo {
+	width: 100px; 
+	height: 100px; 
+	margin: 50px 0;
+}
+
+.create {
+	margin-top: 20px;
+}
+
+.import {
+	margin-top: 50px;
+}

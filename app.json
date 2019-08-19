@@ -1,13 +1,46 @@
 {
 	"pages": [
-		"pages/index/index",
-		"pages/logs/logs"
+		"pages/asset/asset",
+		"pages/vote/vote",
+		"pages/setting/setting",
+		"pages/launch/launch"
 	],
 	"window": {
+		"backgroundColor": "#111113",
 		"backgroundTextStyle": "light",
-		"navigationBarBackgroundColor": "#fff",
-		"navigationBarTitleText": "WeChat",
-		"navigationBarTextStyle": "black"
+		"navigationBarBackgroundColor": "#111113",
+		"navigationBarTitleText": "iWallet",
+		"navigationBarTextStyle": "white"
 	},
+	"tabBar": {
+		"color": "#757575",
+		"selectedColor": "#91a135",
+		"backgroundColor": "#1a1a1d",
+		"list": [
+			{
+				"pagePath": "pages/asset/asset",
+				"text": "资产",
+				"iconPath": "images/tabBar/point_shop.png",
+				"selectedIconPath": "images/tabBar/point_shop_active.png"
+			},
+			{
+				"pagePath": "pages/vote/vote",
+				"text": "投票",
+				"iconPath": "images/tabBar/message.png",
+				"selectedIconPath": "images/tabBar/message_active.png"
+			},
+			{
+				"pagePath": "pages/setting/setting",
+				"text": "设置",
+				"iconPath": "images/tabBar/me.png",
+				"selectedIconPath": "images/tabBar/me_active.png"
+			}
+		]
+	},
+	"networkTimeout": {
+		"request": 10000,
+		"downloadFile": 10000
+	},
+	"debug": true,
 	"sitemapLocation": "sitemap.json"
 }
