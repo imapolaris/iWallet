@@ -1,0 +1,6 @@
+<!--pages/setting/helpCenter/helpCenter.wxml-->
+<i-cell-group i-class="i-cell-group">
+	<i-cell title="如何创建钱包？" is-link></i-cell>
+	<i-cell title="如何备份钱包助记词？" is-link></i-cell>
+	<i-cell title="如何找回密码？" is-link></i-cell>
+</i-cell-group>

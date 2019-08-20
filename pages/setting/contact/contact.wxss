@@ -1,0 +1,4 @@
+/* pages/setting/contact/contact.wxss */
+.i-cell-group {
+	margin-top: 15px;
+}

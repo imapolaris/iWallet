@@ -1,1 +1,4 @@
 /* pages/setting/setting.wxss */
+.i-cell-group {
+	margin-top: 15px;
+}

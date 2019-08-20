@@ -1,0 +1,11 @@
+<!--pages/setting/agreement/agreement.wxml-->
+<view class="container">
+	<view class="header">
+		<text>协议内容</text>
+	</view>
+	<view class="content">
+		<textarea>
+			协议内容协议内容协议内容协议内容协议内容协议内容协议内容协议内容协议内容协议内容协议内容协议内容协议内容协议内容协议内容协议内容协议内容协议内容
+		</textarea>
+	</view>
+</view>

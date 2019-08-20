@@ -1,9 +1,14 @@
 {
 	"pages": [
+	
 		"pages/asset/asset",
 		"pages/vote/vote",
 		"pages/setting/setting",
-		"pages/launch/launch"
+		"pages/launch/launch",
+		"pages/setting/agreement/agreement",
+		"pages/setting/account/account",
+		"pages/setting/contact/contact",
+		"pages/setting/helpCenter/helpCenter"
 	],
 	"window": {
 		"backgroundColor": "#111113",

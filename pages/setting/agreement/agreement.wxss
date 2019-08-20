@@ -1,0 +1,12 @@
+/* pages/setting/agreement/agreement.wxss */
+.header {
+	margin: 15px auto;
+	font-size: 1.5em;
+	font-weight: 400;
+	text-shadow: 1px 5px 5px #bcbcbc;
+}
+
+textarea {
+	font-size: 0.9em;
+	text-indent: 1.8em;
+}

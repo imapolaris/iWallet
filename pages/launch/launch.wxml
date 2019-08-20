@@ -1,5 +1,9 @@
 <!--pages/launch/launch.wxml-->
-<view class=".container">
+<cu-custom bgColor="bg-gradual-blue">
+  <view slot="content">ColorUI 空白模板</view>
+</cu-custom>
+
+<view class="container">
 	<image class="logo" src="../../images/logo/logo.png" mode="aspectFit"></image>
 	<button class="create" size="default" bindtap="createWallet">创建钱包</button>
 	<button class="import" bindtap="importWallet">导入钱包</button>

@@ -1,0 +1,7 @@
+{
+	"navigationBarTitleText": "地址簿",
+  "usingComponents": {
+		"i-cell-group": "../../../components/iviewui/cell-group/index",
+		"i-cell": "../../../components/iviewui/cell/index"
+	}
+}

@@ -1,0 +1,5 @@
+<!--pages/setting/contact/contact.wxml-->
+<i-cell-group i-class="i-cell-group" wx:for="{{contacts}}" wx:key="{{item}}">
+	<i-cell title="名称" value="{{item.name}}"></i-cell>
+	<i-cell title="地址" value="{{item.address}}"></i-cell>
+</i-cell-group>

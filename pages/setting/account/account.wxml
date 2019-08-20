@@ -1,0 +1,16 @@
+<!--pages/setting/address/address.wxml-->
+<view class="asset">
+	<text class="balance">{{asset}}  URAC</text>
+	<text class="flatMoney">总资产≈{{flatMoney}} CNY</text>
+</view>
+
+<i-cell-group i-class="i-cell-group">
+	<i-cell title="账号名称" value="+86 18600464248"></i-cell>
+	<i-cell title="账号地址">
+		<view slot="footer" style="display:flex;">
+			<text style="line-height: 20px;">0x01 ...</text>
+			<image src="../../../images/qr.png" mode="aspectFit" style="width:20px; height:20px;" bindtap="showQR">二维码</image>
+		</view>
+	</i-cell>
+	<i-cell title="注册时间" value="2019年8月20日"></i-cell>
+</i-cell-group>

@@ -8,6 +8,7 @@
 
 page {
 	background-color: #111113;
+	color:#bcbcbc;
 }
 
 button {
