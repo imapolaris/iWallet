@@ -1,6 +1,10 @@
 {
 	"navigationBarTitleText": "资产",
   "usingComponents": {
-		"mp-searchbar": "../../miniprogram_npm/weui-miniprogram/searchbar/searchbar"
+		"mp-searchbar": "../../components/searchbar/index",
+		"i-notice-bar": "../../components/iviewui/notice-bar/index",
+		"i-collapse": "../../components/iviewui/collapse/index",
+		"i-collapse-item": "../../components/iviewui/collapse-item/index",
+		"i-icon": "../../components/iviewui/icon/index"
 	}
 }

@@ -5,7 +5,14 @@ Page({
 	 * 页面的初始数据
 	 */
 	data: {
-
+		asset: 999.01,
+		flatMoney: 1232.45,
+		showContent: '',
+		accordion: false,
+		currencyArr: [
+			{ id: 1, name: "URAC", token: "10,298", money: "100" },
+			{ id: 1, name: "BTC", token: "20,596", money: "200" },
+		]
 	},
 
 	/**
@@ -62,5 +69,15 @@ Page({
 	 */
 	onShareAppMessage: function () {
 
+	},
+	trigger(e) {
+		const data = this.data;
+		if (data.accordion) {
+			this.triggerEvent('collapse', { name: data.name }, { composed: true, bubbles: true });
+		} else {
+			this.setData({
+				showContent: data.showContent ? '' : 'i-collapse-item-show-content'
+			});
+		}
 	}
 })

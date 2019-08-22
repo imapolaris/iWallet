@@ -1,2 +1,38 @@
 <!--pages/asset/asset.wxml-->
 <mp-searchbar></mp-searchbar>
+
+<view class="asset-container">
+	
+
+	<view class="asset">
+		<text class="balance">{{asset}}  URAC</text>
+		<text class="flatMoney">总资产≈{{flatMoney}} CNY</text>
+		<i-notice-bar i-class="noticebar" loop  speed="1500" icon="systemprompt" color="#bcbcbc" backgroundcolor="#343434">
+			关于钱包上线新币的公告
+		</i-notice-bar>
+	</view>
+
+</view>
+
+<block wx:for="{{currencyArr}}">
+	<view class="currency">
+		<view class="currency__section">
+			<view class="currency__form {{showContent ? 'currency__form_separator' : ''}}" bindtap="trigger">
+				<view class="currency__box">
+					<image src="../../images/urac.png" class="currency__icon"></image>
+					<text class="currency__name">{{item.name}}</text>
+				</view>
+				<view class="currency__price">
+					<text class="currency__price-token">{{item.token}}</text>
+					<text class="currency__price-money">≈{{item.money}}</text>
+				</view>
+				<i-icon class="icon-collapse {{showContent}}" type="enter" size="16" i-class="{{ showContent ? 'i-collapse-item-arrow-show' : 'i-collapse-item-arrow' }}"></i-icon>
+			</view>
+			<view wx:if="{{showContent}}" class="currency__content">
+				This is content.
+			</view>
+		</view>
+
+		<view class="currency__footer"></view>
+	</view>
+</block>

@@ -23,7 +23,7 @@
 		}
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.8.0",
+	"libVersion": "2.7.7",
 	"appid": "wx64c23a36f6361b4c",
 	"projectname": "iWallet",
 	"debugOptions": {
