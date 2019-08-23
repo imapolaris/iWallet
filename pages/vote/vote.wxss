@@ -1,1 +1,102 @@
 /* pages/vote/vote.wxss */
+.content-container {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 0 10px;
+}
+.node {
+	padding: 15px 20px;
+	background: #1a1a1d;
+	border-bottom: 1px solid #111113;
+}
+
+.node:first-child {
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+
+.node:last-child {
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+
+.node__box {
+	display: inline-block;
+	width: 92%;
+	overflow: hidden;
+}
+
+.node__label {
+	color: #bcbcbc;
+	font-size: 1em;
+}
+
+.node__index {
+	display: inline-block;
+	width: 8%;
+	color: #757575;
+	overflow: hidden;
+	font-style: italic;
+}
+
+.vote {
+	padding: 15px 20px;
+	background-color: #1a1a1d;
+	border-bottom: 1px solid #111113;
+}
+
+.vote:first-child {
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+
+.vote:last-child {
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+
+.vote__box {
+	display: inline-block;
+	width: 75%;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+
+.vote__logo {
+	height: 35px;
+	width: 35px;
+	display: inline-block;
+}
+
+.vote__info {
+	display: inline-block;
+	margin-left: 10px;
+}
+
+.vote__info-address {
+	font-size: 1em;
+	color: #bcbcbc;
+	display: block;
+}
+
+.vote__info-date {
+	color: #757575;
+	font-size: 0.9em;
+}
+
+.vote__record {
+	display: inline-block;
+	width: 25%;
+	overflow: hidden;
+	box-sizing: border-box;
+	text-align: right;
+}
+
+.vote__record-amount {
+	display: block;
+	color: #fc3d32;
+}
+
+.vote__record-status {
+	font-size: 0.9em;
+}

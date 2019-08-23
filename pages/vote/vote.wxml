@@ -1,2 +1,32 @@
 <!--pages/vote/vote.wxml-->
-<text>pages/vote/vote.wxml</text>
+<my-searchbar></my-searchbar>
+
+<i-tabs i-class="tabs" current="{{ current }}" bindchange="handleChange">
+	<i-tab key="tab1" title="节点排名" i-class="tab tab-left"></i-tab>
+	<i-tab key="tab2" title="投票记录" i-class="tab"></i-tab>
+</i-tabs>
+
+<view wx:if="{{current == 'tab1'}}" class="content-container node-container">
+	<view class="node" wx:for="{{nodes}}">
+		<view class="node__box">
+			<text class="node__label">{{item.address}}</text>
+		</view>
+		<text class="node__index">{{index + 1}}</text>
+	</view>
+</view>
+
+<view wx:else class="content-container vote-container">
+	<view class="vote" wx:for="{{votes}}">
+		<view class="vote__box">
+			<image src="../../images/urac.png" class="vote__logo"></image>
+			<view class="vote__info">
+				<text class="vote__info-address">{{item.address}}</text>
+				<text class="vote__info-date">{{item.date}}</text>
+			</view>
+		</view>
+		<view class="vote__record">
+			<text class="vote__record-amount">-{{item.amount}}</text>
+			<text class="vote__record-status">{{item.status}}</text>
+		</view>
+	</view>
+</view>

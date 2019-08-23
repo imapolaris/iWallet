@@ -1,4 +1,8 @@
 {
 	"navigationBarTitleText": "投票",
-  "usingComponents": {}
+  "usingComponents": {
+		"my-searchbar": "../../components/searchbar/index",
+		"i-tabs": "../../components/iviewui/tabs/index",
+		"i-tab": "../../components/iviewui/tab/index"
+	}
 }

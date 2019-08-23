@@ -11,7 +11,7 @@ Page({
 		accordion: false,
 		currencyArr: [
 			{ id: 1, name: "URAC", token: "10,298", money: "100" },
-			{ id: 1, name: "BTC", token: "20,596", money: "200" },
+			// { id: 1, name: "BTC", token: "20,596", money: "200" },
 		]
 	},
 

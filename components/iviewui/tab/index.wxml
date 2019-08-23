@@ -5,5 +5,4 @@
             <view class="i-tabs-tab-title {{ current ? 'i-tabs-tab-title-current' : '' }}" wx:else>{{ title }}</view>
         </view>
     </i-badge>
-    <view class="i-tabs-tab-bar" wx:if="{{ current }}" style="background: {{ currentColor }}"></view>
 </view>

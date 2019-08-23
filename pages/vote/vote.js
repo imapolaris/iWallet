@@ -5,7 +5,25 @@ Page({
 	 * 页面的初始数据
 	 */
 	data: {
-
+		current: "tab1",
+		nodes: [
+			{ address: '0x01a1 ...' },
+			{ address: '1x01a1 ...' },
+			{ address: '2x01a1 ...' },
+			{ address: '3x01a1 ...' },
+			{ address: '4x01a1 ...' },
+			{ address: '5x01a1 ...' },
+			{ address: '6x01a1 ...' },
+			{ address: '7x01a1 ...' },
+			{ address: '8x01a1 ...' },
+		],
+		votes: [
+			{ address: 'hdetr457g6h...', date: '2019/06/08', amount: 123, status: '抵押金额'},
+			{ address: 'hdetr457g6h...', date: '2019/06/08', amount: 123, status: '抵押金额' },
+			{ address: 'hdetr457g6h...', date: '2019/06/08', amount: 123, status: '抵押金额' },
+			{ address: 'hdetr457g6h...', date: '2019/06/08', amount: 123, status: '抵押金额' },
+			{ address: 'hdetr457g6h...', date: '2019/06/08', amount: 123, status: '抵押金额' },
+		]
 	},
 
 	/**
@@ -62,5 +80,11 @@ Page({
 	 */
 	onShareAppMessage: function () {
 
+	},
+
+	handleChange({ detail }) {
+		this.setData({
+			current: detail.key
+		});
 	}
 })
