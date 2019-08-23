@@ -1,0 +1,31 @@
+<!--pages/vote/votePay/votePay.wxml-->
+<view class="receipt-info vote-container">
+	<view class="receipt-info__address">
+		<text class="receipt-info__title vote-pay__title">收款地址</text>
+		<view class="receipt-info__action">
+			<image src="../../../images/qr.png" class="receipt-info__scan"></image>
+			<image src="../../../images/user.png" class="receipt-info__contact" mode="scaleToFill"></image>
+		</view>
+	</view>
+	<view class="receipt-info__receiver">
+		<text class="receipt-info__receiver-address">ao85kpj5n6ds68eu186hmk</text>
+	</view>
+</view>
+
+<view class="vote-amount vote-container">
+	<view class="vote-amount__box">
+		<text class="vote-pay__title vote-amount__title">投票金额</text>
+		<text class="vote-amount__number">298 URAC</text>
+	</view>
+	<view class="vote-amount__balance">
+		<text class="vote-amount__balance-number">余额 URAC 10,298</text>
+		<label class="vote-amount__balance-action">全部转出</label>
+	</view>
+</view>
+
+<view class="service-fee vote-container">
+	<text class="vote-pay__title service-fee__title">手续费</text>
+	<text class="service-fee__number">0.298 URAC</text>
+</view>
+
+<button class="vote-btn" hover-class="vote-btn__hover">确认投票</button>

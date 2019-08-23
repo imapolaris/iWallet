@@ -1,0 +1,10 @@
+<!--pages/vote/nodeInfo/nodeInfo.wxml-->
+<i-cell-group i-class="i-cell-group">
+	<i-cell title="账户名" value="{{account}}" i-class="i-cell"></i-cell>
+	<i-cell title="总余额" value="{{balance}}" i-class="i-cell"></i-cell>
+	<i-cell title="可用余额" value="{{unused}}" i-class="i-cell"></i-cell>
+	<i-cell title="质押中" value="{{pledge}}" i-class="i-cell"></i-cell>
+	<i-cell title="赎回中" value="{{redemption}}" i-class="i-cell"></i-cell>
+</i-cell-group>
+
+<button class="vote-btn" hover-class="vote-btn__hover">投票</button>

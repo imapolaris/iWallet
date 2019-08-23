@@ -1,0 +1,17 @@
+/* pages/vote/nodeInfo/nodeInfo.wxss */
+.i-cell-group {
+	margin-top: 15px;
+}
+
+.i-cell {
+	height: 35px;
+}
+
+.vote-btn {
+	position: relative;
+	margin-top: 80px;
+}
+
+.vote-btn__hover {
+	opacity: .9;
+}

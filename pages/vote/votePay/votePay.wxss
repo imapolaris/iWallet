@@ -1,0 +1,113 @@
+/* pages/vote/votePay/votePay.wxss */
+.vote-container {
+	background-color: #1a1a1d;
+	padding: 15px 20px;
+	margin: 0 10px;
+	border-radius: 4px;
+}
+
+.receipt-info {
+	margin-top: 15px;
+}
+
+.receipt-info__address {
+	box-sizing: border-box;
+	vertical-align: middle;
+	display: flex;
+}
+
+.vote-pay__title {
+	font-size: .8em;
+	height: 25px;
+	line-height: 25px;
+}
+
+.receipt-info__title {
+	width: 25%;
+}
+
+.receipt-info__action {
+	display: flex;
+	width: 75%;
+	text-align: right;
+	box-sizing: border-box;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.receipt-info__scan {
+	width: 25px;
+	height: 25px;
+	display: inline-block;
+	border-radius: 50%;
+}
+
+.receipt-info__contact {
+	width: 25px;
+	height: 25px;
+	display: inline-block;
+	margin-left:20px;
+	border-radius: 50%;
+	position: relative;
+	margin-right: 2px;
+}
+
+.receipt-info__receiver {
+	margin-top: 10px;
+}
+
+.receipt-info__receiver-address {
+	color: #fff;
+}
+
+.vote-amount {
+	margin-top: 10px;
+}
+
+.vote-amount__box {
+	display: flex;
+	justify-content: space-between;
+}
+
+.vote-amount__title {
+	width: 30%;
+}
+
+.vote-amount__number {
+	width: 70%;
+	text-align: right;
+	color: #fff;
+	font-size: 1.2em;
+}
+
+.vote-amount__balance {
+	margin-top: 15px;
+}
+
+.vote-amount__balance-number {
+	font-size: 0.95em;
+}
+
+.vote-amount__balance-action {
+	color: #8f9e35;
+	margin-left: 15px;
+	font-size: 0.95em;
+}
+
+.service-fee {
+	margin-top: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.service-fee__number {
+	color: #e1e1e1;
+}
+
+.vote-btn {
+	margin-top: 80px;
+}
+
+.vote-btn__hover {
+	opacity: .9;
+}
