@@ -1,0 +1,12 @@
+/* pages/setting/password/index.wxss */
+.i-cell-group {
+	margin-top: 15px;
+}
+
+.password-btn {
+	margin-top: 50px;
+}
+
+.password-btn__hover {
+	opacity: .9;
+}

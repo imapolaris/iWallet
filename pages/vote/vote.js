@@ -86,5 +86,11 @@ Page({
 		this.setData({
 			current: detail.key
 		});
+	},
+
+	showNodeInfo() {
+		wx.navigateTo({
+			url: 'nodeInfo/nodeInfo',
+		})
 	}
 })

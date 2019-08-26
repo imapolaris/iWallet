@@ -1,4 +1,4 @@
-// pages/vote/votePay/votePay.js
+// pages/setting/password/index.js
 Page({
 
 	/**
@@ -62,15 +62,5 @@ Page({
 	 */
 	onShareAppMessage: function () {
 
-	},
-
-	scanForAddress() {
-		wx.scanCode({
-			success: function(result) {
-				wx.showToast({
-					title: result,
-				})
-			}
-		})
-	},
+	}
 })

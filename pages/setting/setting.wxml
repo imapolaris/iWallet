@@ -1,15 +1,15 @@
 <!--pages/setting/setting.wxml-->
 <view>
 	<i-cell-group i-class="i-cell-group">
-		<i-cell title="账号" is-link></i-cell>
-		<i-cell title="密码" is-link></i-cell>
+		<i-cell title="账号" is-link url="account/account"></i-cell>
+		<i-cell title="密码" is-link url="password/index"></i-cell>
 	</i-cell-group>
 	<i-cell-group i-class="i-cell-group">
-		<i-cell title="地址簿" is-link></i-cell>
+		<i-cell title="地址簿" is-link url="contact/contact"></i-cell>
 	</i-cell-group>
 	<i-cell-group i-class="i-cell-group">
 		<i-cell title="服务协议" is-link url="agreement/agreement"></i-cell>
-		<i-cell title="隐私政策" is-link></i-cell>
-		<i-cell title="帮助中心" is-link></i-cell>
+		<i-cell title="隐私政策" is-link url="private/private"></i-cell>
+		<i-cell title="帮助中心" is-link url="helpCenter/helpCenter"></i-cell>
 	</i-cell-group>
 </view>

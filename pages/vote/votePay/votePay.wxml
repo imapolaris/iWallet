@@ -3,7 +3,7 @@
 	<view class="receipt-info__address">
 		<text class="receipt-info__title vote-pay__title">收款地址</text>
 		<view class="receipt-info__action">
-			<image src="../../../images/qr.png" class="receipt-info__scan"></image>
+			<image src="../../../images/qr.png" class="receipt-info__scan" bindtap="scanForAddress"></image>
 			<image src="../../../images/user.png" class="receipt-info__contact" mode="scaleToFill"></image>
 		</view>
 	</view>

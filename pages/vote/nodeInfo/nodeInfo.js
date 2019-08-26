@@ -66,5 +66,11 @@ Page({
 	 */
 	onShareAppMessage: function () {
 
+	},
+
+	payForVote() {
+		wx.navigateTo({
+			url: '../votePay/votePay',
+		})
 	}
 })

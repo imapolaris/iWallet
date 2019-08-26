@@ -2,3 +2,12 @@
 .i-cell-group {
 	margin-top: 15px;
 }
+
+.contact-btn {
+	margin-top: 45px;
+	margin-bottom: 20px;
+}
+
+.contact-btn__hover {
+	opacity: .9;
+}

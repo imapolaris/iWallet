@@ -9,7 +9,10 @@
 		"pages/setting/contact/contact",
 		"pages/setting/helpCenter/helpCenter",
 		"pages/vote/nodeInfo/nodeInfo",
-		"pages/vote/votePay/votePay"
+		"pages/vote/votePay/votePay",
+		"pages/vote/payConfirm/payConfirm",
+		"pages/setting/private/private",
+		"pages/setting/password/index"
 	],
 	"window": {
 		"backgroundColor": "#111113",

@@ -7,4 +7,4 @@
 	<i-cell title="赎回中" value="{{redemption}}" i-class="i-cell"></i-cell>
 </i-cell-group>
 
-<button class="vote-btn" hover-class="vote-btn__hover">投票</button>
+<button class="vote-btn" hover-class="vote-btn__hover" bindtap="payForVote">投票</button>

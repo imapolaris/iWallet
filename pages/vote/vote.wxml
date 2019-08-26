@@ -7,7 +7,7 @@
 </i-tabs>
 
 <view wx:if="{{current == 'tab1'}}" class="content-container node-container">
-	<view class="node" wx:for="{{nodes}}">
+	<view class="node" wx:for="{{nodes}}" bindtap="showNodeInfo">
 		<view class="node__box">
 			<text class="node__label">{{item.address}}</text>
 		</view>

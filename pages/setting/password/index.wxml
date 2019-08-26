@@ -1,0 +1,15 @@
+<!--pages/setting/password/index.wxml-->
+<i-cell-group i-class="i-cell-group">
+	<i-cell title="账号" value="+86 18600464248"></i-cell>
+	<i-cell title="旧密码">
+		<input slot="footer" type="password"></input>
+	</i-cell>
+	<i-cell title="新密码">
+		<input slot="footer" type="password"></input>
+	</i-cell>
+	<i-cell title="确认密码">
+		<input slot="footer" type="password"></input>
+	</i-cell>
+</i-cell-group>
+
+<button class="password-btn" hover-class="password-btn__hover">确认修改</button>
