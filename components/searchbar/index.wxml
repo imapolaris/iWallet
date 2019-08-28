@@ -9,7 +9,7 @@
 					</view>
 			</view>
 
-			<view class="search-bar__speak-btn" bindtap="speakInput">
+			<view class="search-bar__speak-btn" bindtouchstart="startSpeak" bindtouchend="stopSpeak">
 				<image class="icon-speak" src="../../images/speak.png"></image>
 			</view>
 	</view>

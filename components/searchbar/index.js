@@ -1,4 +1,7 @@
 // components/searchbar/searchbar.js
+var plugin = requirePlugin('WechatSI');
+let manager = plugin.getRecordRecognitionManager();
+
 Component({
 	options: {
 		addGlobalClass: true
@@ -42,11 +45,7 @@ Component({
 	lastSearch: Date.now(),
 	lifetimes: {
 		attached: function attached() {
-			if (this.data.focus) {
-				this.setData({
-					searchState: true
-				})
-			}
+			this.initPlugin();
 		}
 	},
 
@@ -91,6 +90,40 @@ Component({
 					console.log('search error', err);
 				});
 			}, this.data.throttle);
+		},
+		initPlugin() {
+			manager.onRecognize = function(res) {
+				console.log('current result', res.result);
+			}
+			manager.onStart = function(res) {
+				console.log("成功开始录音识别", res)
+			}
+			manager.onStop = function(res) {
+				console.log("record file path", res.tempFilePath)
+				console.log("result", res.result)
+
+				wx.showToast({
+					title: res.result,
+				})
+			}
+			manager.onError = function(res) {
+				console.log('error msg', res.msg, res.retcode);
+
+				wx.showToast({
+					title: res.msg,
+				})
+			}
+		},
+		startSpeak() {
+			console.log('start speak');
+			manager.start({
+				duration: 30000,
+				lang: 'zh_CN'
+			});
+		},
+		stopSpeak() {
+			console.log('stop speak');
+			manager.stop();
 		}
 	}
 })

@@ -46,6 +46,12 @@
 			}
 		]
 	},
+	"plugins": {
+		"WechatSI": {
+			"version": "0.3.1",
+			"provider": "wx069ba97219f66d99"
+		}
+	},
 	"networkTimeout": {
 		"request": 10000,
 		"downloadFile": 10000
