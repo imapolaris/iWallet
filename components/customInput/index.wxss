@@ -1,0 +1,28 @@
+/* components/customInput/index.wxss */
+.input-container {
+	display: block;
+	padding: 10px 30px;
+}
+
+.input__box {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 100%;
+	padding: 10px 0;
+	border-bottom: 1px solid #1a1a1d;
+}
+
+.input__icon {
+	
+}
+
+.input__content {
+	margin-left: 10px;
+	flex: 1;
+	color: #bcbcbc;
+}
+
+.input__content-placeholder.obsolete {
+	color: #bcbcbc;
+}

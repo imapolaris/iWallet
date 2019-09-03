@@ -1,0 +1,16 @@
+<!--pages/user/login/login.wxml-->
+<view class="container login-container">
+	<image src="../../../images/logo/logo.png" class="logo"></image>
+</view>
+
+<view class="input-wrapper">
+		<my-input bindonInputChange="onUserNameInput" placeholder="手机号/邮箱" focus="true"></my-input>
+		<my-input bindonInputChange="onPasswordInput" placeholder="密码" password="true"></my-input>
+</view>
+
+<view class="action-wrapper">
+	<view bindtap="register" class="action">用户注册</view>
+	<view bindtap="forgotPassword" class="action">忘记密码</view>
+</view>
+
+<button bindtap="loginNow" class="login-btn">登录</button>

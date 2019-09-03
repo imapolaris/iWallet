@@ -1,0 +1,15 @@
+<!--components/customInput/index.wxml-->
+
+<view class="input-container">
+	<view class="input__box">
+		<icon type="{{icon}}" class="input__icon" size="20" hidden="{{!showIcon}}"></icon>
+		<slot name="prefix"></slot>
+		<input class="input__content" placeholder-class="input__content-placeholder" placeholder="{{placeholder}}" password="{{password}}" bindinput="onInput" value="{{inputData}}" focus="{{focus}}"></input>
+		<block wx:if="{{password}}">
+			<icon wx:if="{{showPassword}}" type="warn" class="" size="20" bindtap="changeShowPassword"></icon>
+		<icon wx:else type="success" class="" size="20" bindtap="changeShowPassword"></icon>
+		</block>
+
+		<slot></slot>
+	</view>
+</view>

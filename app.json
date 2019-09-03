@@ -1,5 +1,6 @@
 {
 	"pages": [
+		"pages/user/register/register",
 		"pages/asset/asset",
 		"pages/vote/vote",
 		"pages/setting/setting",
@@ -13,7 +14,10 @@
 		"pages/vote/payConfirm/payConfirm",
 		"pages/setting/private/private",
 		"pages/setting/password/index",
-		"pages/test/subpage/subpage"
+		"pages/test/subpage/subpage",
+		"pages/user/login/login",
+		
+		"pages/user/findPassword/findPassword"
 	],
 	"window": {
 		"backgroundColor": "#111113",
@@ -21,7 +25,7 @@
 		"navigationBarBackgroundColor": "#111113",
 		"navigationBarTitleText": "iWallet",
 		"navigationBarTextStyle": "white",
-		"enablePullDownRefresh": true
+		"enablePullDownRefresh": false
 	},
 	"tabBar": {
 		"color": "#757575",

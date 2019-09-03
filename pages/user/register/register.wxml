@@ -1,0 +1,39 @@
+<!--pages/user/register/register.wxml-->
+<view class="container logo-container">
+	<image src="../../../images/logo/logo.png" class="logo"></image>
+</view>
+
+<view class="content-wrapper">
+	<my-input wx:if="{{withEmail}}" placeholder="请输入邮箱"></my-input>
+	<my-input wx:else placeholder="请输入手机号" showIcon="{{false}}">
+		<view slot="prefix" class="prefix-wrapper" bindtap="chooseRegion">
+			+86
+			<view class="angle">></view>
+		</view>
+	</my-input>
+	<my-input placeholder="设置密码" password="true"></my-input>
+	<my-input placeholder="确认密码" password="true"></my-input>
+	<my-input placeholder="验证码">
+		<view>获取验证码</view>
+	</my-input>
+
+	<my-checkbox bindonStatusChanged="onAgreeStatusChanged">
+		<view style="">
+			我已阅读并同意
+			<view style="display:inline-block; color:#22c7d7;" bindtap="viewAgreement">
+			《用户协议》
+			</view>
+		</view>
+	</my-checkbox>
+</view>
+
+<button bindtap="register" class="register-btn">注册</button>
+
+<view wx:if="{{withEmail}}" class="switch-wrapper" bindtap="switchWay">使用手机号注册</view>
+<view wx:else class="switch-wrapper" bindtap="switchWay">使用邮箱注册</view>
+
+<picker mode="selector" disabled="{{false}}" range="{{array}}">
+	<view class="picker">
+      当前选择：{{array[index]}}
+  </view>
+</picker>

@@ -1,0 +1,35 @@
+/* pages/user/register/register.wxss */
+.logo-container {
+	margin-top: 30px
+}
+
+.logo {
+	height: 100px;
+	width: 100px;
+}
+
+.content-wrapper {
+	margin-top: 30px;
+}
+
+.register-btn {
+	margin-top: 20px;
+}
+
+.switch-wrapper {
+	margin-top: 8px;
+	text-align: center;
+}
+
+.prefix-wrapper {
+	padding: 0 8px 0 0;
+	color: #506004;
+	border-right: 1px solid #1a1a1d;
+}
+
+.angle {
+	display: inline-block;
+	margin-left: 3px;
+	transform:rotate(90deg);
+	-webkit-transform:rotate(90deg); /* Safari 和 Chrome */
+}

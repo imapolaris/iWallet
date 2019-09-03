@@ -1,0 +1,10 @@
+<!--components/customCheckbox/customCheckbox.wxml-->
+<view class="checkbox__wrapper">
+	<view class="checkbox__box">
+		<icon wx:if="{{checked}}" type="success" size="20" class="checkbox__icon" bindtap="onStatusChanged"></icon>
+		<icon wx:else type="warn" size="20" class="checkbox__icon" bindtap="onStatusChanged"></icon>
+		<view class="label__wrapper">
+			<slot></slot>
+		</view>
+	</view>
+</view>

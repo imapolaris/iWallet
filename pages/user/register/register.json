@@ -1,0 +1,7 @@
+{
+	"navigationBarTitleText": "",
+  "usingComponents": {
+		"my-input": "../../../components/customInput/index",
+		"my-checkbox": "../../../components/customCheckbox/index"
+	}
+}
