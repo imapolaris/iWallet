@@ -1,2 +1,67 @@
+
+<official-account></official-account>
+<!-- <ad></ad> -->
+<view bindtap="ad">广告</view>
+
+<view bindtap="setting">设置</view>
+<view bindtap="authorize">授权</view>
+<view bindtap="address">选择地址</view>
+
+<view bindtap="pay">支付</view>
+
+<view bindtap="analyze">分析</view>
+
+<view bindtap="report">告警</view>
+
+<button open-type="getUserInfo">授权</button>
+<view bindtap="wxInterface" >微信开放接口</view>
+
+<view bindtap="vibrate">震动</view>
+<view bindtap="callY">打电话</view>
+<view bindtap="screen">屏幕</view>
+<slider min="0" max="1" step="0.1" bindchange="screenBright"></slider>
+<view bindtap="network">网络</view>
+<view bindtap="clipboard">剪贴板</view>
+<view bindtap="getBattery">电量</view>
+
+<view bindtap="addContact">手机通讯录</view>
+
 <!--pages/test/index.wxml-->
-<view id="tapTest" data-hi="WeChat" bindtap="tapName">Click me!</view>
+<view bindtap="iBeaconAction">iBeacon</view>
+
+<!-- <map height="100%" width="100%" id="map" show-location></map> -->
+<view bindtap="getCenter">获取地图中心的经纬度</view>
+<!-- <image src="../../images/temp/temp.png" bindtap="previewImage"></image> -->
+<view bindtap="chooseImage">选择图片</view>
+<view bindtap="doShare">转发</view>
+
+<block wx:if="{{api == 0}}">
+	<view bindtap="getMenuButtonPos">胶囊按钮位置</view>
+
+	<view bindtap="downloadFont">下载字体</view>
+
+	<view bindtap="showTabBar">显示 tabBar</view>
+
+	<view bindtap="showActionSheet">操作菜单</view>
+	<view bindtap="showLoading">loading 提示框</view>
+	<view bindtap="showToast">模态对话框</view>
+
+	<view bindtap="canIUse">Can I use console.group?</view>
+	<view bindtap="base64ToArrayBuffer">Base64 to ArrayBuffer</view>
+
+	<view bindtap="getSysInfo">get System Information</view>
+
+	<view bindtap="getUpdateMgr">get Update Manager</view>
+
+	<view bindtap="getLaunchOption">get Launch Options</view>
+
+	<view bindtap="getAnError">Throw an exception</view>
+
+	<view bindtap="realtimeLog">实时日志管理器实例</view>
+
+	<text>路由</text>
+	<view id="tab" bindtap="switchTab">跳转Tab</view>
+	<view bindtap="reLaunch">重载</view>
+	<view bindtap="redirectTo">跳转</view>
+	<view bindtap="navigate">导航</view>
+</block>

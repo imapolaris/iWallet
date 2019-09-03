@@ -1,6 +1,6 @@
 //app.js
 App({
-  onLaunch: function () {
+  onLaunch: function (options) {
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
@@ -41,7 +41,26 @@ App({
 				this.globalData.CustomBar = custom.bottom + custom.top - e.statusBarHeight;
 			}
 		})
+
+		wx.onError(function(error) {
+			console.log('error:', error);
+		})
+
+		wx.onAppShow(function (option) {
+			console.log('app show', option);
+		})
+
+		wx.onAppHide(function() {
+			console.log('app hide');
+		})
+
+		wx.setEnableDebug({
+			enableDebug: false,
+		})
   },
+	onPageNotFound: function(options) {
+		console.log('page not found !!!')
+	},
   globalData: {
     userInfo: null
   }

@@ -12,14 +12,16 @@
 		"pages/vote/votePay/votePay",
 		"pages/vote/payConfirm/payConfirm",
 		"pages/setting/private/private",
-		"pages/setting/password/index"
+		"pages/setting/password/index",
+		"pages/test/subpage/subpage"
 	],
 	"window": {
 		"backgroundColor": "#111113",
 		"backgroundTextStyle": "light",
 		"navigationBarBackgroundColor": "#111113",
 		"navigationBarTitleText": "iWallet",
-		"navigationBarTextStyle": "white"
+		"navigationBarTextStyle": "white",
+		"enablePullDownRefresh": true
 	},
 	"tabBar": {
 		"color": "#757575",

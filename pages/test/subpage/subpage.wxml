@@ -1,0 +1,2 @@
+<!--pages/test/subpage/subpage.wxml-->
+<button bindtap="goBack">返回</button>

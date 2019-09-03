@@ -1,1 +1,9 @@
 /* pages/test/index.wxss */
+view {
+	border: 1px solid #ccc;
+	display: flex;
+	justify-content: center;
+	margin: 5px 5px;
+	padding: 5px 0;
+	font-size: 1.2em;
+}
