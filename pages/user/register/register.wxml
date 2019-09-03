@@ -32,8 +32,8 @@
 <view wx:if="{{withEmail}}" class="switch-wrapper" bindtap="switchWay">使用手机号注册</view>
 <view wx:else class="switch-wrapper" bindtap="switchWay">使用邮箱注册</view>
 
-<picker mode="selector" disabled="{{false}}" range="{{array}}">
+<!-- <picker mode="selector" disabled="{{false}}" range="{{array}}">
 	<view class="picker">
       当前选择：{{array[index]}}
   </view>
-</picker>
+</picker> -->

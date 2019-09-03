@@ -1,6 +1,5 @@
 {
 	"pages": [
-		"pages/user/register/register",
 		"pages/asset/asset",
 		"pages/vote/vote",
 		"pages/setting/setting",
@@ -16,7 +15,7 @@
 		"pages/setting/password/index",
 		"pages/test/subpage/subpage",
 		"pages/user/login/login",
-		
+		"pages/user/register/register",
 		"pages/user/findPassword/findPassword"
 	],
 	"window": {
