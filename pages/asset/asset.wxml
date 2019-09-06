@@ -14,10 +14,10 @@
 
 </view>
 
-<block wx:for="{{currencyArr}}">
+<block wx:for="{{currencyArr}}" wx:key="{{item}}">
 	<view class="currency">
 		<view class="currency__section">
-			<view class="currency__form {{showContent ? 'currency__form_separator' : ''}}" bindtap="trigger">
+			<view class="currency__form {{item.showContent ? 'currency__form_separator' : ''}}" bindtap="trigger" data-item="{{item}}">
 				<view class="currency__box">
 					<image src="../../images/urac.png" class="currency__icon"></image>
 					<text class="currency__name">{{item.name}}</text>
@@ -26,9 +26,9 @@
 					<text class="currency__price-token">{{item.token}}</text>
 					<text class="currency__price-money">≈{{item.money}}</text>
 				</view>
-				<i-icon class="icon-collapse {{showContent}}" type="enter" size="16" i-class="{{ showContent ? 'i-collapse-item-arrow-show' : 'i-collapse-item-arrow' }}"></i-icon>
+				<i-icon class="icon-collapse {{item.showContent}}" type="enter" size="16" i-class="{{ item.showContent ? 'i-collapse-item-arrow-show' : 'i-collapse-item-arrow' }}"></i-icon>
 			</view>
-			<view wx:if="{{showContent}}" class="currency__content">
+			<view wx:if="{{item.showContent}}" class="currency__content">
 				This is content.
 			</view>
 		</view>

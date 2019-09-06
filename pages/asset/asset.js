@@ -1,18 +1,11 @@
 // pages/asset/asset.js
-Page({
+const httpRequest = require('../../utils/request.js');
 
-	/**
-	 * 页面的初始数据
-	 */
+Page({
 	data: {
 		asset: 999.01,
 		flatMoney: 1232.45,
-		showContent: '',
-		accordion: false,
-		currencyArr: [
-			{ id: 1, name: "URAC", token: "10,298", money: "100" },
-			// { id: 1, name: "BTC", token: "20,596", money: "200" },
-		]
+		currencyArr: []
 	},
 
 	/**
@@ -26,7 +19,7 @@ Page({
 	 * 生命周期函数--监听页面初次渲染完成
 	 */
 	onReady: function () {
-
+		this.fetchData();
 	},
 
 	/**
@@ -37,24 +30,10 @@ Page({
 	},
 
 	/**
-	 * 生命周期函数--监听页面隐藏
-	 */
-	onHide: function () {
-
-	},
-
-	/**
-	 * 生命周期函数--监听页面卸载
-	 */
-	onUnload: function () {
-
-	},
-
-	/**
 	 * 页面相关事件处理函数--监听用户下拉动作
 	 */
 	onPullDownRefresh: function () {
-
+		this.fetchData();
 	},
 
 	/**
@@ -70,14 +49,41 @@ Page({
 	onShareAppMessage: function () {
 
 	},
+
+
+	fetchData() {
+		wx.showLoading({
+			title: '加载数据中...',
+			mask: true
+		});
+		const $ = this;
+		const task = httpRequest(
+			'https://tcb-api.tencentcloudapi.com',
+			'GET',
+			null,
+			null,
+			(res) => {
+				console.log(res);	
+				wx.hideLoading();
+
+				$.setData({
+					currencyArr: [
+						{ id: 1, name: "URAC", token: "10,298", money: "100", showContent: '' },
+						{ id: 2, name: "BTC", token: "20,596", money: "200", showContent: '' },
+					]
+				})
+			}
+		)
+	},
 	trigger(e) {
-		const data = this.data;
-		if (data.accordion) {
-			this.triggerEvent('collapse', { name: data.name }, { composed: true, bubbles: true });
-		} else {
-			this.setData({
-				showContent: data.showContent ? '' : 'i-collapse-item-show-content'
-			});
+		const target = e.currentTarget.dataset['item'];
+		let arr = this.data.currencyArr;
+		let item = arr.find(_ => _.id === target.id);
+		if (item) {
+			item.showContent = item.showContent ? '' : 'i-collapse-item-show-content';
 		}
+		this.setData({
+			currencyArr: arr
+		});
 	}
 })
