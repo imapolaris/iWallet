@@ -19,6 +19,8 @@
 .switch-wrapper {
 	margin-top: 8px;
 	text-align: center;
+
+	margin-bottom: 30px;
 }
 
 .prefix-wrapper {

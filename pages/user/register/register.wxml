@@ -6,10 +6,12 @@
 <view class="content-wrapper">
 	<my-input wx:if="{{withEmail}}" placeholder="请输入邮箱"></my-input>
 	<my-input wx:else placeholder="请输入手机号" showIcon="{{false}}">
-		<view slot="prefix" class="prefix-wrapper" bindtap="chooseRegion">
-			+86
-			<view class="angle">></view>
-		</view>
+		<picker slot="prefix" mode="selector" disabled="{{false}}" range="{{array}}" range-key="display" value="{{currentCC}}" bindchange="changeCountryCode">
+			<view class="prefix-wrapper">
+				+{{array[currentCC].code}}
+				<view class="angle">></view>
+			</view>
+		</picker>
 	</my-input>
 	<my-input placeholder="设置密码" password="true"></my-input>
 	<my-input placeholder="确认密码" password="true"></my-input>
@@ -31,9 +33,3 @@
 
 <view wx:if="{{withEmail}}" class="switch-wrapper" bindtap="switchWay">使用手机号注册</view>
 <view wx:else class="switch-wrapper" bindtap="switchWay">使用邮箱注册</view>
-
-<!-- <picker mode="selector" disabled="{{false}}" range="{{array}}">
-	<view class="picker">
-      当前选择：{{array[index]}}
-  </view>
-</picker> -->

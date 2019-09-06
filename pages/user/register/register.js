@@ -1,6 +1,7 @@
 // pages/user/register/register.js
-Page({
+const CountryCode = require('../../../assets/data/CountryCode.js');
 
+Page({
 	/**
 	 * 页面的初始数据
 	 */
@@ -10,13 +11,14 @@ Page({
 		passwordAgain: '',
 		verifyCode: '',
 		agree: false,
-		array: [
-			'美国', '中国', '巴西', '日本'
-		]
+		array: CountryCode,
+		currentCC: 0
 	},
 
-	chooseRegion() {
-
+	changeCountryCode(e) {
+		this.setData({
+			currentCC: e.detail.value
+		});
 	},
 
 	onAgreeStatusChanged(e) {
@@ -36,5 +38,15 @@ Page({
 		this.setData({
 			withEmail: !withEmail
 		})
+	},
+
+	register() {
+		let cc = [...CountryCode];
+		for (let i = 0; i < cc.length; ++i) {
+			let item = cc[i];
+			item.display = item.country + ' ' + `[+${item.code}]`
+		}
+
+		console.log(JSON.stringify(cc))
 	}
 })
